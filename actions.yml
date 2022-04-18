@@ -1,0 +1,13 @@
+# action.yml
+name: "ESP-LDF OTA Version Increment GitHub Action"
+description: "Increments the version number in the version for for ESP-LDF OTA. "
+author: "TJ Daw"
+branding:
+  icon: "git-commit"
+  color: "blue"
+outputs:
+  app_version: # id of output
+    description: "Update Version File incremented by one"
+runs:
+  using: "docker"
+  image: "Dockerfile"
