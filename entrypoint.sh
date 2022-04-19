@@ -10,6 +10,7 @@ echo "Git Event Name: ${GITHUB_EVENT_NAME}"
 echo "\nStarting Git Operations"
 git config --global user.email "esp32-ota-version-increment@github-action.com"
 git config --global user.name "esp32-ota-version-increment App"
+	git config --global --add safe.directory /github/workspace
 
 github_ref=""
 
