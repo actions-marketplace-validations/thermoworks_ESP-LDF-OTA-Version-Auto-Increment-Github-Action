@@ -51,7 +51,7 @@ echo $newcontent > $file_name
 
 git add -A 
 git commit -m "Incremented to ${newver}"  -m "[skip ci]"
-git tag -a "v${newver}" -m "[skip ci]")
+git tag -a "v${newver}" -m "[skip ci]"
 
 git show-ref
 echo "Git Push"
