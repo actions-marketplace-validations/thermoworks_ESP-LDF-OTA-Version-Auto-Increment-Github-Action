@@ -50,7 +50,7 @@ echo $newcontent > $file_name
 
 git add -A 
 git commit -m "Incremented to ${newver}"  -m "[skip ci]"
-([ -n "$tag_version" ] && [ "$tag_version" = "true" ]) && (git tag -a "${newver}" -m "[skip ci]") || echo "No tag created"
+git tag -a "v${newver}" -m "[skip ci]")
 
 git show-ref
 echo "Git Push"
